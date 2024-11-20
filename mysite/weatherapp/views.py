@@ -27,7 +27,7 @@ def index(request):
     else:
         data = {}
 
-    return render(request, "main/index.html", data)
+    return render(request, "main/index.html", data) #pushing code to front end.
        
 
     
