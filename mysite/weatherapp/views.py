@@ -7,6 +7,6 @@ from django.shortcuts import render
 def index(request):
     if request.method == 'POST':
         city = request.POST['city']
-        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=a04cc63d5a4ca8b3e3714bc42616cb41').read()
+        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=a04cc63d5a4ca8b3e3714bc42616cb41').read()
 
     
